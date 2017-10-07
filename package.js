@@ -1,10 +1,10 @@
 Package.describe({
-    name         : 'okland:accounts-phone',
-    version      : '0.0.21',
+    name         : 'sasogeek:accounts-phone',
+    version      : '0.0.24',
     // Brief, one-line summary of the package.
     summary      : 'A login service based on mobile phone number, For Meteor.',
     // URL to the Git repository containing the source code for this package.
-    git          : 'https://github.com/okland/accounts-phone',
+    git          : 'https://github.com/sasogeek/accounts-phone',
     // By default, Meteor will default to using README.md for documentation.
     // To avoid submitting documentation, set this field to null.
     documentation: 'README.md'
@@ -17,7 +17,7 @@ Npm.depends({
 });
 
 Package.onUse(function (api) {
-    api.use('npm-bcrypt@=0.7.8_2', 'server');
+    api.use('npm-bcrypt@=0.9.3', 'server');
 
     api.use('accounts-base@1.0.2', ['client', 'server']);
     // Export Accounts (etc) to packages using this one.
